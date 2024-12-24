@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Merry Christmas, My Love 🎄❤️</title>
+  <style>
+    /* General Reset */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      color: #fff;
+      background: linear-gradient(to bottom, #001f3f, #0d335d);
+      overflow-x: hidden;
+    }
+
+    /* Section Styling */
+    .section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 60px 20px;
+      height: auto;
+      overflow: hidden;
+      border-radius: 20px;
+    }
+
+    /* Header Section */
+    .header-section {
+      background: url('Screenshot_20241224_222115_Google.jpg') no-repeat center center/cover;
+      animation: fadeIn 3s ease-in-out;
+      position: relative;
+      height: auto;
+    }
+
+    .header-title {
+      font-size: 3rem;
+      font-weight: bold;
+      animation: textGlow 2s infinite alternate;
+    }
+
+    @keyframes textGlow {
+      0% { text-shadow: 0 0 10px #ffb3b3; color: #ffe6e6; }
+      100% { text-shadow: 0 0 20px #ff6b6b; color: #fff; }
+    }
+
+    .header-message {
+      background: rgba(0, 0, 0, 0.5);
+      font-size: 1.5rem;
+      margin-top: 10px;
+      animation: fadeInText 2s ease;
+    }
+
+    @keyframes fadeInText {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Floating Balloons and Trees */
+    .float-item {
+      position: absolute;
+      animation: floatUp 8s linear infinite;
+      font-size: 60px;
+    }
+
+    .float-item img {
+      width: 50px;
+      height: auto;
+    }
+
+    @keyframes floatUp {
+      from { transform: translateY(100vh); }
+      to { transform: translateY(-20%); }
+    }
+
+    .balloon {
+      left: 10%;
+      animation-duration: 9s;
+    }
+
+    .tree {
+      left: 30%;
+      animation-duration: 11s;
+    }
+
+    .balloon2 {
+      left: 70%;
+      animation-duration: 7s;
+    }
+
+    /* Romantic Message Section */
+    .romantic-section {
+      background: linear-gradient(to bottom, #f4aaff, #ffb3b3);
+      color: #fff;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    .romantic-message {
+      font-size: 1.8rem;
+      font-weight: bold;
+      line-height: 2.5rem;
+      animation: zoomIn 1.5s ease-in-out;
+    }
+
+    @keyframes zoomIn {
+      from { transform: scale(0.5); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
+    }
+
+    /* Surprise Button Section */
+    .surprise-section {
+      background: #1a1a2e;
+    }
+
+    .surprise-button {
+      padding: 15px 30px;
+      font-size: 1.5rem;
+      font-weight: bold;
+      background: linear-gradient(to right, #ff6b6b, #ffb3b3);
+      border: none;
+      border-radius: 50px;
+      color: #fff;
+      cursor: pointer;
+      animation: pulse 1.5s infinite;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); box-shadow: 0 0 10px #ff758c; }
+      50% { transform: scale(1.1); box-shadow: 0 0 20px #ff6b6b; }
+      100% { transform: scale(1); box-shadow: 0 0 10px #ff758c; }
+    }
+
+    /* Footer Section */
+    .footer {
+      background-color: #22223b;
+      padding: 20px;
+      font-size: 1.2rem;
+      color: #ffb3b3;
+    }
+
+    .footer span {
+      font-style: italic;
+      color: #ff758c;
+    }
+ .starlit-section {
+    background: linear-gradient(to bottom, #001f3f, #041c2c);
+    color: #fff;
+    padding: 60px 20px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .starlit-message {
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-align: center;
+    line-height: 2.5rem;
+    animation: glowText 2s infinite alternate;
+  }
+
+  @keyframes glowText {
+    0% { text-shadow: 0 0 10px #ffffff; }
+    100% { text-shadow: 0 0 20px #ff758c; }
+  }
+
+  .stars {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+
+  .star {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background-color: #ff758c;
+    border-radius: 50%;
+    box-shadow: 0 0 15px #ff758c, 0 0 30px #ff6b6b;
+    animation: twinkle 2s infinite ease-in-out alternate;
+  }
+
+  @keyframes twinkle {
+    0% { transform: scale(1); opacity: 1; }
+    100% { transform: scale(1.5); opacity: 0.7;
+ }
+  .lantern-section {
+    background: #f880ff;
+    color: #fff;
+    padding: 60px 20px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .lantern-message {
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-align: center;
+    line-height: 2.5rem;
+    margin-bottom: 40px;
+    animation: fadeIn 2s ease-in-out;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .lanterns {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+
+  .lantern {
+    position: absolute;
+    width: 40px;
+    height: 70px;
+    background: radial-gradient(circle, #ffe6b3, #ff9966);
+    border-radius: 50% 50% 0 0;
+    animation: floatLanterns 10s linear infinite;
+  }
+
+  @keyframes floatLanterns {
+    0% { transform: translateY(110vh) scale(0.7); opacity: 0.8; }
+    100% { transform: translateY(-10vh) scale(1); opacity: 1; }
+  }
+  </style>
+</head>
+<body>
+
+  <!-- Header Section -->
+  <div class="section header-section">
+    <div class="header-title">Merry Christmas, My Love ❤️</div>
+    <div class="header-message">
+      "This season of love and joy feels even more magical because of you. You are my greatest gift! Sending you and your family Christmas cheer wrapped in love and blessings. Merry Christmas!"
+    </div>
+    <!-- Floating Balloons and Trees -->
+    <div class="float-item balloon">
+     🎊
+    </div>
+    <div class="float-item tree">
+     🎄
+    </div>
+    <div class="float-item balloon2">
+      🎈
+    </div>
+  </div>
+
+  <!-- Romantic Message Section -->
+  <div class="section romantic-section">
+    <div class="romantic-message">
+      "Every moment with you feels like Christmas—pure magic and warmth.  
+      Thank you for being the light of my life. I love you more than words can say."
+    </div>
+  </div>
+
+  <!-- Surprise Section -->
+  <div class="section surprise-section">
+    <button class="surprise-button" onclick="revealSurprise()">Click for a Special Surprise 🎁</button>
+    <div id="surprise-text" style="display:none; margin-top: 20px;">
+      <p>"My heart is yours forever, and this Christmas, I promise to love you even more deeply. You are my everything, my love, my joy, my home. 🎄❤️"</p>
+    </div>
+  </div>
+<!-- Starlit Night of Love Section -->
+<div class="section starlit-section">
+  <div class="starlit-message">
+    "Under the starlit sky, your love is the brightest constellation in my universe.
+     You are my forever, my everything. Merry Christmas, my love."
+  </div>
+  <div class="stars">
+    <div class="star" style="top: 10%; left: 15%;"></div>
+    <div class="star" style="top: 20%; left: 50%;"></div>
+    <div class="star" style="top: 30%; left: 30%;"></div>
+    <div class="star" style="top: 40%; left: 70%;"></div>
+    <div class="star" style="top: 50%; left: 20%;"></div>
+    <div class="star" style="top: 60%; left: 80%;"></div>
+  </div>
+</div>
+<!-- Love's Lantern Glow Section -->
+<div class="section lantern-section">
+  <div class="lantern-message">
+    <p>"With every beat of my heart, I am reminded of the glow you bring into my life.  
+    This Christmas, let our love light the way to endless happiness together."</p>
+  </div>
+  <div class="lanterns">
+    <div class="lantern" style="left: 10%; animation-duration: 6s;"></div>
+    <div class="lantern" style="left: 30%; animation-duration: 7s;"></div>
+    <div class="lantern" style="left: 50%; animation-duration: 5s;"></div>
+    <div class="lantern" style="left: 70%; animation-duration: 6s;"></div>
+    <div class="lantern" style="left: 90%; animation-duration: 8s;"></div>
+  </div>
+</div>
+
+  <!-- Footer Section -->
+  <div class="section footer">
+    Designed with endless love by <span>George</span>.
+  </div>
+
+  <!-- JavaScript -->
+  <script>
+    function revealSurprise() {
+      const surpriseText = document.getElementById('surprise-text');
+      surpriseText.style.display = 'block';
+    }
+  </script>
+
+</body>
+</html>
